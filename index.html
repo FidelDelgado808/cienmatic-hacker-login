@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret login</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" /></head>
+<body>
+
+  <form action="access_approved.php" method="post">
+  <div class="imgcontainer">
+    <img src="https://s2.qwant.com/thumbr/474x316/6/3/bfb7465fde2e7095745096a20870ce3a3b878644c12519f641b3737c7a9458/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.KlIwzGCPCzahoAu13UlFTgAAAA%26pid%3DApi&q=0&b=1&p=0&a=0" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"></label>
+    <input type="text" placeholder="Username" name="uname" required>
+
+    <label for="psw"></label>
+
+    <input type="password" id="myInput" name="psw" placeholder="Password"   required>
+<label class="switch">
+    <input type="checkbox" onclick="revealPassword()"><span class="slider round"></span>
+</label>
+
+<script>
+      
+function revealPassword() {
+ var x = document.getElementById("myInput");
+  if (x.type === "password") {
+      x.type ="text";
+        } else {
+      x.type ="password";
+    }
+  };
+
+    </script>
+  </div>
+
+  <div class="container">
+    <button class="button" type="submit">Login</button>
+  </div>
+</form> 
+  </form>
+
+</div>
+
+</body>
+</html>
